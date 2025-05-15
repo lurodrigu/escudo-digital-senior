@@ -1,0 +1,116 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #007bff;
+}
+
+  .boton-ancho {
+    width: 100%;
+    padding: 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .boton-ancho:hover {
+    background-color: #0056b3;
+  }
+
+  /* Opcional: quitar bordes del botón al hacer clic */
+  .boton-ancho:focus {
+    outline: none;
+  }
+
+.titulo-inf {
+    text-align: center;
+}
+
+.img {
+    height: 100%;
+    width: 100%;
+object-fit: contain;
+}
+
+.web-falsa {
+    background-color: #e9ecef;
+    padding:5px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+}
+
+.chatbot {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.chatbot p {
+    margin-bottom: 15px;
+    font-style: italic;
+    color: #6c757d;
+}
+
+#mychat {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 15px;
+    height: 200px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+#mychat p {
+    margin: 5px 0;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    word-break: break-word;
+    display: inline-block;
+    clear: both;
+    max-width: 80%;
+}
+
+#mychat p.user-message {
+    background-color: #6c757d;
+    float: right;
+}
+
+#mensaje-input {
+    padding: 10px;
+    width: calc(100% - 120px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+
+#enviar-boton {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#enviar-boton:hover {
+    background-color: #218838;
+}

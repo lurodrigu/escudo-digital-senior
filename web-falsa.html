@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayuda al adulto mayor en ciberseguridad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <a href="index.html" style="text-decoration: none;"><h1>Cómo identificar una web falsa</h1></a> 
+
+    <div class="web-falsa">
+        <h2>1. Verifica el dominio principal</h2>
+  <p>Asegúrate de que el dominio sea legítimo y exacto.</p>
+  <p><strong>Ejemplo real:</strong> www.paypal.com</p>
+  <p><strong>Falso:</strong> www.paypa1.com, paypal.security-check.com, paypal.com.login.update.ru</p>
+  <p>El dominio principal está justo antes del .com, .net, etc.</p>
+
+  <h2>2. Revisa el protocolo HTTPS</h2>
+  <p>Asegúrate de que la URL comience con <code>https://</code>, no solo <code>http://</code>.</p>
+  <p>Busca el ícono del candado en el navegador.</p>
+  <p><strong>Nota:</strong> Esto no garantiza que el sitio sea seguro, pero sí es una señal inicial.</p>
+
+  <h2>3. Evalúa la estructura y gramática</h2>
+  <p>Las URLs falsas suelen tener:</p>
+  <ul>
+    <li>Palabras mal escritas (errores ortográficos)</li>
+    <li>Nombres largos o con muchos guiones</li>
+    <li>Texto confuso o traducciones automáticas</li>
+  </ul>
+
+  <h2>4. No hagas clic en enlaces sospechosos</h2>
+  <p>Si recibes un enlace por correo, mensaje o redes sociales, no hagas clic inmediatamente.</p>
+  <p>Pasa el cursor sobre el enlace para ver la URL completa y verifica que te lleve al sitio correcto antes de hacer clic.</p>
+
+  <h2>5. Consulta con herramientas de verificación</h2>
+  <p>Usa servicios como:</p>
+  <ul>
+    <li><a href="https://www.virustotal.com/" target="_blank">VirusTotal</a></li>
+    <li><a href="https://transparencyreport.google.com/safe-browsing/search" target="_blank">Google Safe Browsing</a></li>
+  </ul>
+  <p>Pega la URL allí y verifica si es considerada peligrosa.</p>
+
+  <h2>6. Comprueba la información del dominio</h2>
+  <p>Visita <a href="https://whois.domaintools.com/" target="_blank">Whois Lookup</a></p>
+  <p>Revisa quién registró el dominio, cuándo fue creado y si parece confiable.</p>
+
+  <h2>7. Desconfía de urgencias o amenazas</h2>
+  <p>Los sitios falsos suelen decir cosas como:</p>
+  <ul>
+    <li>“Tu cuenta será suspendida”</li>
+    <li>“Actualiza tu información AHORA”</li>
+    <li>“Gana un premio urgente”</li>
+  </ul>
+  <p>Los sitios legítimos rara vez usan ese tipo de lenguaje.</p>
+
+    </div>
+
+    <div class="chatbot">
+        <p>Tambien puedes utilzar nuestro asistente inteligente el cual respondera tus preguntas sobre tu navegación en internet o sobre el recurso anteriormente expuesto.</p>
+        <div id="mychat"></div>
+        <input type="text" id="mensaje-input" placeholder="Escriba su pregunta aquí, este texto se borrara al pulsar.">
+        <button id="enviar-boton">Enviar</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
