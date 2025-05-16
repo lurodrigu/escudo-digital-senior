@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+/*document.addEventListener('DOMContentLoaded', function() {
     const chatWindow = document.getElementById('mychat');
     const mensajeInput = document.getElementById('mensaje-input');
     const enviarBoton = document.getElementById('enviar-boton');
@@ -32,7 +32,22 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    function agregarMensaje(mensaje, esUsuario) {
+    function agregarMensaje(texto, remitente) {
+    const chat = document.getElementById("mychat");
+    const mensajeHTML = `<div><strong>${remitente}:</strong> ${texto}</div>`;
+    chat.innerHTML += mensajeHTML;
+}
+
+
+
+   /* document.getElementById("mensaje-input").addEventListener("keypress", function (e) {
+    if (e.key === "Enter") {
+        e.preventDefault(); // Evita que se envíe un formulario si hay uno
+        document.getElementById("enviar-boton").click();
+    }
+});
+
+ /* function agregarMensaje(mensaje, esUsuario) {
         const nuevoMensaje = document.createElement('p');
         nuevoMensaje.textContent = mensaje;
         if (esUsuario) {
@@ -42,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
         chatWindow.scrollTop = chatWindow.scrollHeight; // Hacer scroll al último mensaje
     }
 
-    function generarRespuestaInteligente(pregunta) {
+   /* function generarRespuestaInteligente(pregunta) {
         // Simulación de respuestas basadas en algunas palabras clave
         const preguntaLower = pregunta.toLowerCase();
         if (preguntaLower.includes('página web falsa') || preguntaLower.includes('sitio falso')) {
@@ -54,5 +69,5 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             return "No logro comprender su pregunta. Por favor, sea más específico o pregunte sobre otro tema de ciberseguridad para adultos mayores.";
         }
-    }
+    }*/
 });

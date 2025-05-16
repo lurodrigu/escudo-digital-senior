@@ -32,7 +32,7 @@ h1 {
 .boton-ancho {
     width: 100%;
     padding: 15px;
-    background-color: brown;
+    background-color: green;
     margin-bottom: 15px;
     color: white;
     border: none;
@@ -42,6 +42,10 @@ h1 {
     text-align: center;
     cursor: pointer;
     transition: background-color 0.3s;
+}
+
+.boton-ancho-panico{ 
+    background-color: red;
 }
 
 .boton-ancho:hover {
