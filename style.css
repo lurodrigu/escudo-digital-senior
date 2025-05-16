@@ -142,7 +142,7 @@ object-fit: contain;
     position: fixed;
     top: 0;
     left: 0;
-    width: 250px;
+    width: 160px;
     height: 100vh; /* ✅ Toda la altura de la ventana */
     padding: 20px;
     background-color: #f8f9fa;
@@ -219,8 +219,21 @@ body {
   cursor: pointer;           /* Cursor de puntero cuando pasa sobre el botón */
   transition: transform 0.3s ease-in-out;  /* Transición suave para el efecto */
   margin-top: 30px;          /* Espacio entre los botones anteriores */
+  animation: animarBoton 2s infinite; /* Animación continua */
 }
 
+/* Animación para el botón */
+@keyframes animarBoton {
+  0% {
+    transform: scale(1);     /* Tamaño original */
+  }
+  50% {
+    transform: scale(1.2);   /* Se agranda */
+  }
+  100% {
+    transform: scale(1);     /* Vuelve a su tamaño original */
+  }
+}
 /* Animación del botón */
 .boton-emergencia:hover {
   transform: scale(1.2);     /* Aumenta el tamaño del botón al pasar el ratón */
