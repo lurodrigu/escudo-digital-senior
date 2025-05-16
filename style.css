@@ -176,3 +176,39 @@ body {
 .boton-ancho {
     width: 100%; /* Ahora será 100% del contenedor, no de la ventana */
 }
+
+/* Contenedor de los botones */
+.contenedor-botones {
+  display: flex;
+  flex-direction: column;    /* Organiza los botones de manera vertical */
+  align-items: center;       /* Centra los botones horizontalmente */
+  margin-top: 30px;          /* Opcional: espacio entre los botones */
+}
+
+/* Estilo para el botón de emergencia */
+.boton-emergencia {
+  width: 150px;              /* Ancho del botón */
+  height: 150px;             /* Altura del botón */
+  background-color: red;     /* Color de fondo rojo */
+  color: white;              /* Color del texto */
+  border-radius: 50%;        /* Hace el botón circular */
+  border: none;              /* Quita el borde */
+  font-size: 16px;           /* Tamaño de la fuente */
+  font-weight: bold;         /* Pone el texto en negrita */
+  display: flex;             /* Flexbox para centrar el texto */
+  justify-content: center;   /* Centra el texto horizontalmente */
+  align-items: center;       /* Centra el texto verticalmente */
+  text-transform: uppercase; /* Pone el texto en mayúsculas */
+  cursor: pointer;           /* Cursor de puntero cuando pasa sobre el botón */
+  transition: transform 0.3s ease-in-out;  /* Transición suave para el efecto */
+  margin-top: 30px;          /* Espacio superior entre los botones */
+}
+
+/* Efecto de animación para el botón de emergencia */
+.boton-emergencia:hover {
+  transform: scale(1.2);     /* Aumenta el tamaño al 120% cuando el ratón pasa sobre él */
+}
+
+.boton-emergencia:active {
+  transform: scale(0.9);     /* Disminuye el tamaño al 90% cuando se hace clic */
+}
