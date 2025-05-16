@@ -193,7 +193,7 @@ body {
   display: flex;
   flex-direction: column;    /* Coloca los botones de forma vertical */
   align-items: center;       /* Centra los botones horizontalmente */
-  gap: 10px;                 /* Opcional: agrega espacio entre los botones */
+  gap: 10px;                 
 }
 
 
@@ -220,6 +220,7 @@ body {
   transition: transform 0.3s ease-in-out;  /* Transición suave para el efecto */
   margin-top: 30px;          /* Espacio entre los botones anteriores */
   animation: animarBoton 2s infinite; /* Animación continua */
+   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7); /* Sombra más intensa al pasar el mouse */
 }
 
 /* Animación para el botón */
