@@ -166,8 +166,8 @@ object-fit: contain;
 
 @media (max-width: 767px) {
     .banner-lateral {
-        width: 180px; /* Ancho más estrecho en móviles */
-        padding: 15px; /* Menos espacio interno */
+        width: 100px; /* Ancho más estrecho en móviles */
+        padding: 10px; /* Menos espacio interno */
     }
 }
 
