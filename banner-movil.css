@@ -1,0 +1,33 @@
+@media (max-width: 767px) {
+  .banner-lateral {
+    position: fixed;
+    bottom: 0;              /* Coloca el banner en la parte inferior */
+    top: auto;              /* Anula el valor top original */
+    left: 0;                /* Alineado al borde izquierdo */
+    width: 100vw;           /* Ocupa todo el ancho de la pantalla */
+    height: auto;           /* Altura automática según contenido */
+    padding: 10px;          /* Relleno interno */
+    background-color: #f8f9fa;
+    border-top: 2px solid #ccc;
+    border-right: none;     /* Quitamos el borde lateral original */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra hacia arriba */
+    display: flex;
+    justify-content: center; /* Centra imágenes horizontalmente */
+    align-items: center;     /* Centra imágenes verticalmente */
+    flex-direction: row;     /* Imágenes en fila */
+    gap: 10px;               /* Espacio entre imágenes */
+    z-index: 999;
+  }
+
+  .banner-img {
+    width: 80px;             /* Ajusta el tamaño de las imágenes */
+    height: auto;
+    margin-bottom: 0;        /* Elimina espacio inferior en horizontal */
+    border-radius: 5px;
+  }
+
+  body {
+    margin-left: 0 !important;  /* Quitamos margen lateral si existía */
+    padding-bottom: 100px;      /* Espacio para que el banner no tape contenido */
+  }
+}
