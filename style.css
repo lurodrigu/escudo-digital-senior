@@ -168,3 +168,11 @@ body {
     margin-left: 270px; /* Empuja el contenido para que no quede tapado */
 }
 
+.contenido-principal {
+    margin-left: 20px; /* Respeta el ancho del banner */
+    padding: 20px;
+}
+
+.boton-ancho {
+    width: 100%; /* Ahora será 100% del contenedor, no de la ventana */
+}
