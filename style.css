@@ -3,6 +3,7 @@ body {
     margin: 20px;
     background-color: #f4f4f4;
     color: #333;
+    
 }
 
 h1 {
@@ -61,7 +62,7 @@ object-fit: contain;
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 8px;
-    margin-top: 20px;
+
 }
 
 .chatbot p {
