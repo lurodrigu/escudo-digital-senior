@@ -177,14 +177,31 @@ body {
     width: 100%; /* Ahora será 100% del contenedor, no de la ventana */
 }
 
-/* Contenedor de los botones */
-.contenedor-botones {
+/* Contenedor principal que ocupa toda la pantalla */
+.contenedor-principal {
   display: flex;
-  flex-direction: column;    /* Organiza los botones de manera vertical */
-  align-items: center;       /* Centra los botones horizontalmente */
-  margin-top: 30px;          /* Opcional: espacio entre los botones */
+  flex-direction: column;      /* Coloca los elementos en columna */
+  justify-content: center;     /* Centra los elementos verticalmente */
+  align-items: center;         /* Centra los elementos horizontalmente */
+  height: 100vh;               /* Asegura que ocupe toda la altura de la pantalla */
+  padding: 20px;               /* Opcional: agrega algo de espacio alrededor */
+  box-sizing: border-box;      /* Para incluir el padding en el tamaño total */
 }
 
+/* Estilo para el contenedor de los botones normales */
+.contenedor-botones {
+  display: flex;
+  flex-direction: column;    /* Coloca los botones de forma vertical */
+  align-items: center;       /* Centra los botones horizontalmente */
+  gap: 10px;                 /* Opcional: agrega espacio entre los botones */
+}
+
+
+.centrar-boton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /* Estilo para el botón de emergencia */
 .boton-emergencia {
   width: 150px;              /* Ancho del botón */
@@ -201,14 +218,14 @@ body {
   text-transform: uppercase; /* Pone el texto en mayúsculas */
   cursor: pointer;           /* Cursor de puntero cuando pasa sobre el botón */
   transition: transform 0.3s ease-in-out;  /* Transición suave para el efecto */
-  margin-top: 30px;          /* Espacio superior entre los botones */
+  margin-top: 30px;          /* Espacio entre los botones anteriores */
 }
 
-/* Efecto de animación para el botón de emergencia */
+/* Animación del botón */
 .boton-emergencia:hover {
-  transform: scale(1.2);     /* Aumenta el tamaño al 120% cuando el ratón pasa sobre él */
+  transform: scale(1.2);     /* Aumenta el tamaño del botón al pasar el ratón */
 }
 
 .boton-emergencia:active {
-  transform: scale(0.9);     /* Disminuye el tamaño al 90% cuando se hace clic */
+  transform: scale(0.9);     /* Reduce el tamaño del botón cuando se hace clic */
 }
