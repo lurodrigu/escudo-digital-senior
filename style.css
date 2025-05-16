@@ -1,3 +1,5 @@
+
+
 body {
     font-family: sans-serif;
     margin: 20px;
@@ -166,9 +168,15 @@ object-fit: contain;
 
 @media (max-width: 767px) {
     .banner-lateral {
-        width: 100px; /* Ancho más estrecho en móviles */
+        width: 50px; /* Ancho más estrecho en móviles */
         padding: 10px; /* Menos espacio interno */
     }
+}
+
+@media (max-width: 767px) {
+  .contenedor-principal {
+    padding: 10px;              /* Reduce el padding en pantallas pequeñas */
+  }
 }
 
 body {
