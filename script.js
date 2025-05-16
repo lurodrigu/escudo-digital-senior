@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
         } else if (preguntaLower.includes('phishing')) {
             return "El phishing es un intento de engañarle para que revele información personal a través de correos electrónicos, mensajes o sitios web falsos que parecen legítimos.";
         } else {
-            return "Entiendo su pregunta. Por favor, sea más específico o pregunte sobre otro tema de ciberseguridad para adultos mayores.";
+            return "No logro comprender su pregunta. Por favor, sea más específico o pregunte sobre otro tema de ciberseguridad para adultos mayores.";
         }
     }
 });
