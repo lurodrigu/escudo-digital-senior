@@ -335,3 +335,83 @@ width: 60px;
 .boton-emergencia:active {
   transform: scale(0.9);     /* Reduce el tamaño del botón cuando se hace clic */
 }
+
+.footer {
+  text-align: center;
+  margin-top: 100px; /* Ajusta el espacio que quieres */
+  padding: 1em 0;
+}
+
+.planes-suscripcion {
+  display: block;             /* Para que pueda centrarse como bloque */
+  text-align: center;         /* Centra el texto */
+  font-size: 25px;            /* Tamaño grande y moderno */
+  font-weight: bold;          /* Negrita */
+  margin: 40px 0;             /* Espaciado arriba y abajo */
+  color: rgb(233, 230, 230);                
+  text-transform: uppercase;  
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* sombra suave */      
+}
+
+
+.boton-peque {
+  display: block;
+  background-color: #007BFF; /* Color de fondo del botón */
+  color: white;
+  border: none;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  width: 250px;
+  margin: 20px auto;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.boton-peque:hover {
+  transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+}
+
+.boton-peque h3 {
+  font-size: 1.6rem;
+  margin: 0;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.boton-peque .precio {
+  color: #FFD700; /* Color dorado para el precio */
+}
+
+.boton-peque .descripcion {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #e0e0e0;
+}
+
+.boton-peque .beneficios {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.boton-peque .beneficios li {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #e0e0e0;
+  margin-bottom: 8px;
+}
+
+.boton-peque .beneficios li img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.imagen-peque {
+  width: 25px;
+  margin-top: 15px;
+}
