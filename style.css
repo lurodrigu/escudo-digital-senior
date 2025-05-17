@@ -73,6 +73,7 @@ h1 {
   border-radius: 8px;
   font-family: Arial, sans-serif;
   box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3); /* Sombra tenue */
+  text-shadow: 0 1px 2px white;
 }
 
 /* Título */
@@ -81,7 +82,7 @@ h1 {
   font-weight: bold;
   color: white;
   font-family: Arial, sans-serif;
-  text-shadow: 2px 2px 6px rgba(59, 130, 246, 0.3); /* Sombra tenue en las letras */
+  text-shadow: 2px 1px 2px black; /* Sombra tenue en las letras */
   margin-left: 10px;  /* Reduce el espacio entre el logo y el texto */
   white-space: nowrap; /* Evita el salto de línea y mantiene el texto en una sola línea */
 }
@@ -90,18 +91,95 @@ h1 {
 .menu {
   width: 100px;
   height: 50px;
-  background-color: #0464ff;
+  background-color: #007BFF; /* Color de fondo del botón */
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
+  font-size: 1.2rem; /* Tamaño de fuente */
   font-weight: bold;
-  border-radius: 8px;
+  border-radius: 8px; /* Bordes redondeados */
   font-family: Arial, sans-serif;
   box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3); /* Sombra tenue */
-  margin-right: 15px; /* Añadir margen a la derecha del menú */
+  outline: none; /* Quita el contorno del botón */
+  border: none;  /* Quita el borde si lo tiene */
+  padding: 10px 20px; /* Espaciado interno */
+  cursor: pointer;
+  margin-right: 15px; /* Margen a la derecha */
 }
+/* Estilos para la ventana emergente */
+.ventana {
+  display: none; /* La ventana emergente está oculta por defecto */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  z-index: 9999; /* Asegura que la ventana esté encima de otros elementos */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilo del contenido de la ventana emergente */
+.contenido-ventana {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Título de la ventana emergente */
+.contenido-ventana h2 {
+  font-size: 24px;
+  color: #ff3b3b; /* Color rojo para el título */
+  margin-bottom: 20px;
+}
+
+/* Estilo para los párrafos */
+.contenido-ventana p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* Estilo de los botones de menú */
+.boton-menu {
+  background-color: #007BFF; /* Color azul */
+  color: white;
+  font-size: 18px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.boton-menu:hover {
+  background-color: #0056b3; /* Un azul más oscuro cuando se pasa el ratón */
+}
+
+/* Estilo del botón de cerrar */
+.cerrar {
+  background-color: #ccc; /* Gris */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.cerrar:hover {
+  background-color: #888; /* Gris más oscuro cuando se pasa el ratón */
+}
+
 
 
 .policia-cibernetica {

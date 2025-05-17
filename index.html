@@ -17,9 +17,34 @@
     <div class="logo">EDS</div>
   </a>
   <div class="titulo">ESCUDO DIGITAL <br> SENIOR</div>
-  <a href="index.html" style="text-decoration: none;">
-    <div class="menu">Menú</div>
-  </a>
+
+
+    <div onclick="abrirVentana_cuatro()">
+      <button class="menu">Menú</button>
+    </div>
+
+ <div id="ventanaEmergente_cuatro" class="ventana">
+  <div class="contenido-ventana">
+    
+    <h2>Menú de opciones</h2>
+
+    <p>Seleccione una de las siguientes opciones:</p>
+
+    <!-- Botón para modificar contactos de emergencia -->
+    <button class="boton-menu" onclick="modificarContactos()">Modificar Contactos de Emergencia</button>
+
+    <!-- Botón para acceder a ajustes de la app -->
+    <button class="boton-menu" onclick="entrarAjustes()">Ajustes de la App</button>
+
+    <!-- Botón para gestionar métodos de pago -->
+    <button class="boton-menu" onclick="gestionarMetodosPago()">Métodos de Pago</button>
+
+    <!-- Botón para cerrar la ventana -->
+    <button class="cerrar" onclick="cerrarVentana_cuatro()">Cerrar</button>
+  </div>
+</div>
+
+
 </div>
 
 <div class="usuario">
@@ -39,6 +64,7 @@
   <img class="imagenes" src="./patrocinadores/Centrum_(multivitamin)_logo.png" alt="">
   <img class="imagenes" src="./patrocinadores/logo_lubriderm.png" alt="logo-lubriderm">
   <img class="imagenes" src="./patrocinadores/asus.png" alt="logo-asus">
+  <img class="imagenes" src="./patrocinadores/utel.webp" alt="logo-asus">
 </marquee>
 </div>
 
@@ -59,7 +85,6 @@
   <div class="centrar-boton" onclick="abrirVentana_dos()">
 
   <button class="boton-emergencia">EMERGENCIA</button>
-</a>
 </div>
 </div>
 
@@ -106,7 +131,7 @@
 
 <div id="ventanaEmergente" class="ventana">
   <div class="contenido-ventana">
-    <span class="cerrar" onclick="cerrarVentana()">&times;</span>
+    <span class="cerrar" onclick="cerrarVentana()">Cerrar</span>
     <h2>Contacta con la Policía Cibernética</h2>
     <p>Para realizar reportes y solicitar apoyo, comunícate al:</p>
     <p><strong>55 5242 5100 ext. 5086</strong></p>
@@ -159,7 +184,7 @@
 <span class="planes-suscripcion">Planes de Suscripción</span>
 
 <div class="planes-premium">
-  <button class="boton-peque animacion-peque" onclick="abrirVentana_cuatro()">
+  <button class="boton-peque animacion-peque" onclick="abrirVentana_cinco()">
     <h3>Plan Mensual <span class="precio">$99</span></h3>
     <p class="descripcion">Mantén tu seguridad y privacidad en línea con la mejor protección disponible.</p>
     <ul class="beneficios">
@@ -171,6 +196,32 @@
   </button>
 </div>
 
+
+<div id="ventanaEmergente_cinco" class="ventana">
+  <div class="contenido-ventana">
+    <span class="cerrar" onclick="cerrarVentana_cinco()">Cerrar</span>
+    <div class="features">
+  <h2>Características de la Protección</h2>
+
+  <ul>
+    <li>
+      <h3>Navegación segura</h3>
+      <p>Protege al usuario contra amenazas en sitios web peligrosos, lo cual es importante para evitar fraudes o infecciones por malware.</p>
+    </li>
+    
+    <li>
+      <h3>Control parental</h3>
+      <p>Aunque en este caso se usa para adultos mayores, es útil para controlar los tipos de contenido accesibles, garantizando una experiencia libre de riesgos.</p>
+    </li>
+    
+    <li>
+      <h3>Asesoramiento en seguridad digital</h3>
+      <p>Recibe consejos utiles sobre cómo proteger tus cuentas y datos en línea de manera fácil y segura.</p>
+    </li>
+  </ul>
+</div>
+
+</div>
 
 
 
