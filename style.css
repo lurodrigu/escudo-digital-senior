@@ -1,20 +1,27 @@
-
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+       url('../fonts/OpenSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 body {
-    font-family: sans-serif;
+    font-family: Verdana;
     margin: 20px;
-    background-color: #f4f4f4;
+    background: linear-gradient(140deg, #6EABCF, #548DAF);
     color: #333;
     
 }
 
 h1 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #007bff;
-      background: linear-gradient(140deg, #007bff, #ff2000); /* Cambia colores si quieres */
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: linear-gradient(140deg, #007bff, black
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* aún funciona */
+  text-align: center;
 }
 
         .alerta {
@@ -32,19 +39,29 @@ h1 {
         }
 
 .boton-ancho {
+     background: linear-gradient(140deg, gainsboro, gray
+  );
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    
     width: 100%;
     padding: 15px;
-    background-color: brown;
+    background-color: gainsboro;
     margin-bottom: 20px;
-    color: white;
+    color: black;
     border: none;
     border-radius: 5px;
     font-size: 18px;
     font-weight: bold;
     text-align: center;
     cursor: pointer;
-    transition: background-color 0.3s;
-       box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7); 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.boton-ancho:hover {
+  transform: scale(1.1); /* Se agranda un poco */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Más sombra para dar profundidad */
 }
 
 .boton-ancho-panico{ 
@@ -146,7 +163,7 @@ object-fit: contain;
     position: fixed;
     top: 0;
     left: 0;
-    width: 160px;
+    width: 220px;
     height: 100vh; /* ✅ Toda la altura de la ventana */
     padding: 20px;
     background-color: #f8f9fa;
