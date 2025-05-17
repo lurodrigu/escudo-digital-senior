@@ -1,20 +1,30 @@
 @font-face {
-  font-family: 'Open Sans';
-  src: url('../fonts/OpenSans-Regular.woff2') format('woff2'),
-       url('../fonts/OpenSans-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+ font-family: "Montserrat";
+ src: url(./fuentes/Montserrat/Montserrat-VariableFont_wght.ttf) format("truetype");
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  /*scrollbar-width: none; /* Firefox */
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Edge, Safari */
 }
 
 body {
-    font-family: Verdana;
-    margin: 20px;
-    background: linear-gradient(140deg, #6EABCF, #548DAF);
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #1d85c1, #548DAF);
     color: #333;
-    
-}
+    overflow-x: hidden;
 
+}
 h1 {
   background: linear-gradient(140deg, #007bff, black
   );
@@ -23,6 +33,7 @@ h1 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* aún funciona */
   text-align: center;
 }
+
 
         .alerta {
             background-color: #fff3cd;
@@ -38,44 +49,159 @@ h1 {
             font-style: italic;
         }
 
-.boton-ancho {
-     background: linear-gradient(140deg, gainsboro, gray
-  );
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    
-    width: 100%;
-    padding: 15px;
-    background-color: gainsboro;
-    margin-bottom: 20px;
-    color: black;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+/* Contenedor logo, título y menú */
+.logo-container {
+  display: flex;
+  align-items: center; /* Centra verticalmente el contenido */
+  justify-content: space-between; /* Distribuye el espacio entre los elementos */
+  width: 100%;
+  padding: 10px;
 }
 
-.boton-ancho:hover {
-  transform: scale(1.1); /* Se agranda un poco */
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Más sombra para dar profundidad */
+/* Logo */
+.logo {
+  width: 100px;
+  height: 100px;
+  background-color: #3B82F6;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: bold;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3); /* Sombra tenue */
 }
 
-.boton-ancho-panico{ 
-    background-color: red;
+/* Título */
+.titulo {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-shadow: 2px 2px 6px rgba(59, 130, 246, 0.3); /* Sombra tenue en las letras */
+  margin-left: 10px;  /* Reduce el espacio entre el logo y el texto */
+  white-space: nowrap; /* Evita el salto de línea y mantiene el texto en una sola línea */
 }
 
-.boton-ancho:hover {
-    background-color: #0056b3;
+/* Menú */
+.menu {
+  width: 100px;
+  height: 50px;
+  background-color: #0464ff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3); /* Sombra tenue */
+  margin-right: 15px; /* Añadir margen a la derecha del menú */
 }
 
-  /* Opcional: quitar bordes del botón al hacer clic */
-.boton-ancho:focus {
-    outline: none;
+
+.policia-cibernetica {
+  
+  padding: 13px 15px; /* Espacio en los lados */
+  box-sizing: border-box;
 }
+
+.policia-cibernetica button {
+  width: 100%; /* Ocupa todo el ancho del contenedor con padding aplicado */
+  padding: 20px;
+  background-color: #004085;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+}
+
+.policia-cibernetica button:hover {
+  background-color: #0056b3;
+}
+
+.policia-cibernetica h3 {
+  margin: 0 0 8px 0;
+  font-size: 20px;
+}
+
+.policia-cibernetica p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.imagen-peque {
+  width: 30px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin-left: auto;  /* Empuja la imagen hacia la derecha */
+  
+}
+
+
+.bienvenida-centrada {
+    width: 50%;
+  margin: 0 auto;
+  color: rgb(233, 230, 230);
+  font-size: 20px;
+  text-align: center;
+   text-shadow: 4px 4px 10px rgba(2, 7, 15, 0.3); /* Sombra tenue con el color azul */
+}
+
+.marquee {
+  width: 100%; /* Esto ocupa todo el ancho visible */
+  height: 100px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box; /* Evita que el padding aumente el tamaño total */
+}
+
+.marquee img.imagenes {
+  width: 120px;        /* Misma anchura para todas */
+  height: 80px;        /* Misma altura para todas */
+  object-fit: contain; /* Escala sin deformar */
+  margin-right: 20px;  /* Espacio entre imágenes */
+
+}
+
+@keyframes pulse-hover {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* Aplica la animación SOLO cuando el mouse está encima */
+.boton-peque:hover {
+  animation: pulse-hover 0.6s ease-in-out;
+}
+
+
+
+
+
+
 
 .titulo-inf {
     text-align: center;
@@ -104,78 +230,15 @@ object-fit: contain;
 
 }
 
-.chatbot p {
-    margin-bottom: 15px;
-    font-style: italic;
-    color: #6c757d;
+.logo_policia {
+width: 60px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;         /* Centra horizontalmente */
+  margin-bottom: 10px;  
 }
 
-#mychat {
-    background-color: #f8f9fa;
-    border: 1px solid #ddd;
-    padding: 15px;
-    height: 200px;
-    overflow-y: auto;
-    margin-bottom: 15px;
-    border-radius: 5px;
-}
-
-#mychat p {
-    margin: 5px 0;
-    padding: 8px 12px;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: white;
-    word-break: break-word;
-    display: inline-block;
-    clear: both;
-    max-width: 80%;
-}
-
-#mychat p.user-message {
-    background-color: #6c757d;
-    float: right;
-}
-
-#mensaje-input {
-    padding: 10px;
-    width: calc(100% - 120px);
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-right: 10px;
-    box-sizing: border-box;
-}
-
-#enviar-boton {
-    padding: 10px 20px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#enviar-boton:hover {
-    background-color: #218838;
-}
-
-.banner-lateral {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 220px;
-    height: 100vh; /* ✅ Toda la altura de la ventana */
-    padding: 20px;
-    background-color: #f8f9fa;
-    border-right: 2px solid #ccc;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    font-family: sans-serif;
-    font-size: 14px;
-    color: #333;
-    z-index: 999;
-    overflow-y: auto;
-    
-}
 
 .banner-img {
     width: 100%;      /* ✅ Ocupará todo el ancho del div */
@@ -198,18 +261,12 @@ object-fit: contain;
   }
 }
 
-body {
-    margin-left: 270px; /* Empuja el contenido para que no quede tapado */
-}
-
 .contenido-principal {
     margin-left: 20px; /* Respeta el ancho del banner */
     padding: 20px;
 }
 
-.boton-ancho {
-    width: 100%; /* Ahora será 100% del contenedor, no de la ventana */
-}
+
 
 /* Contenedor principal que ocupa toda la pantalla */
 .contenedor-principal {
@@ -238,11 +295,12 @@ body {
 }
 /* Estilo para el botón de emergencia */
 .boton-emergencia {
-  width: 150px;              /* Ancho del botón */
-  height: 150px;             /* Altura del botón */
+  width: 200px;              /* Ancho del botón */
+  height: 50px;             /* Altura del botón */
+  margin-bottom: 30px;
   background-color: red;     /* Color de fondo rojo */
   color: white;              /* Color del texto */
-  border-radius: 50%;        /* Hace el botón circular */
+  border-radius: 50px;        /* Hace el botón circular */
   border: none;              /* Quita el borde */
   font-size: 16px;           /* Tamaño de la fuente */
   font-weight: bold;         /* Pone el texto en negrita */
@@ -252,7 +310,7 @@ body {
   text-transform: uppercase; /* Pone el texto en mayúsculas */
   cursor: pointer;           /* Cursor de puntero cuando pasa sobre el botón */
   transition: transform 0.3s ease-in-out;  /* Transición suave para el efecto */
-  margin-top: 30px;          /* Espacio entre los botones anteriores */
+  margin-top: 15px;          /* Espacio entre los botones anteriores */
   animation: animarBoton 2s infinite; /* Animación continua */
    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7); /* Sombra más intensa al pasar el mouse */
 }
@@ -263,7 +321,7 @@ body {
     transform: scale(1);     /* Tamaño original */
   }
   50% {
-    transform: scale(1.2);   /* Se agranda */
+    transform: scale(1.09);   /* Se agranda */
   }
   100% {
     transform: scale(1);     /* Vuelve a su tamaño original */

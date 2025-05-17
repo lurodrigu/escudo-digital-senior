@@ -7,70 +7,156 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="banner-movil.css">
     <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="usuario.css">
+    <link rel="stylesheet" href="ventana-emergente.css">
 
 </head>
 <body>
-   <a href="index.html" style="text-decoration: none;"><h1>GUARDIAN MAYOR</h1></a> 
+<div class="logo-container">
+  <a href="index.html" style="text-decoration: none;">
+    <div class="logo">EDS</div>
+  </a>
+  <div class="titulo">ESCUDO DIGITAL <br> SENIOR</div>
+  <a href="index.html" style="text-decoration: none;">
+    <div class="menu">Menú</div>
+  </a>
+</div>
+
+<div class="usuario">
+  <img src="./img/perfil-hombre-viejo-pop-art_18591-41796.avif" alt="foto-usuario">
+  <div class="usuario-info">
+    <p class="nombre">ROBERTO</p>
+    <p class="rol">Usuario Protegido</p>
+  </div>
+</div>
+
+
+  <div class="marquee">
+  <marquee behavior="scroll" direction="left">
+  <img class="imagenes" src="./patrocinadores/pfizer-logo.png" alt="pfizer-logo">
+  <img class="imagenes" src="./patrocinadores/ensure-logo.png" alt="ensure-logo">
+  <img class="imagenes" src="./patrocinadores/tena-vector-logo.png" alt="tena-vector-logo">
+  <img class="imagenes" src="./patrocinadores/Centrum_(multivitamin)_logo.png" alt="">
+  <img class="imagenes" src="./patrocinadores/logo_lubriderm.png" alt="logo-lubriderm">
+  <img class="imagenes" src="./patrocinadores/asus.png" alt="logo-asus">
+</marquee>
+</div>
+
+
+<div class="bienvenida-centrada">
+  <strong><p>Bienvenido a tu Protección</p></strong>
+  <p>Tu seguridad es nuestra prioridad.</p>
+</div>
 
 <div class="contenido-principal">
 
-  <a href="riesgos-digitales.html" style="text-decoration: none;">
-  <button class="boton-ancho">CONCIENCIACIÓN SOBRE RIESGOS DIGITALES
-</button>
-</a>
 
-<a href="web-falsa.html" style="text-decoration: none;">
-  <button class="boton-ancho">¿CÓMO IDENTIFICAR UNA WEB FALSA?</button>
-</a>
 
-<a href="seguridad-contraseñas.html" style="text-decoration: none;">
-  <button class="boton-ancho">SEGURIDAD EN CONTRASEÑAS Y CUENTAS
-</button>
-</a>
 
-<a href="dispositivos-personales.html" style="text-decoration: none;">
-  <button class="boton-ancho">MANEJO DE DISPOSITIVOS PERSONALES
-</button>
-</a>
 
-<a href="estafas-fraudes.html" style="text-decoration: none;">
-  <button class="boton-ancho">PROTECCIÓN CONTRA ESTAFAS Y FRAUDES
-</button>
-</a>
 
-<div class="centrar-boton">
-<a href="policia-cibernetica.html" style="text-decoration: none;">
-  <button class="boton-emergencia">EMERGENCIA CIBERNETICA</button>
+<div>
+  <div class="centrar-boton" onclick="abrirVentana_dos()">
+
+  <button class="boton-emergencia">EMERGENCIA</button>
 </a>
 </div>
-
 </div>
 
 
+<div id="ventanaEmergente_dos" class="ventana">
+  <div class="contenido-ventana">
+    
+    <h2>Alerta de emergencia</h2>
 
+    <p>Se ha activado el protocolo de emergencia. ¿Qué acción desea realizar?</p>
 
-<div class="chatbot">
-    <p>También puedes utilizar nuestro asistente inteligente, formula cualquier pregunta relacionada con la ciberseguridad y te responderá de forma instantanea.</p>
-    <div id="mychat"></div>
-    <input type="text" id="mensaje-input" placeholder="Escriba su pregunta aquí">
-    <button id="enviar-boton">Enviar</button>
+    <!-- Botón rojo grande -->
+    <button class="boton-emergencia-grande" onclick="llamarEmergencia()">Llamar a emergencias</button>
+
+    <!-- Botón verde más pequeño -->
+    <button class="boton-familiar" onclick="llamarFamiliar()">Llamar a un familiar</button>
+    <button class="cerrar" onclick="cerrarVentana_dos()"> Cerrar</button>
+  </div>
 </div>
 
 
 
-<div class="banner-lateral">
-<img class="banner-img" src="./img/fwebp.webp" alt="asus-patrocinador">
+  <div class="policia-cibernetica">
+    <button class="boton-peque animacion-peque" onclick="abrirVentana()">
+      <img class="logo_policia" src="./img/policia_logo.svg" alt="logo_policia">
+      <h3>Policía Cibernética</h3>
+      <p>Contacta directamente con las autoridades especializadas en delitos informáticos
+        <br>
+        <img class="imagen-peque" src="./img/flecha_derecha.svg" alt="">
+      </p>
+    </button>
+  </div>
 
-<img class="banner-img" src="./img/utel.jpg" alt="">
+    <div class="policia-cibernetica">
+    <button class="boton-peque animacion-peque" onclick="abrirVentana_tres()">
+      <img class="logo_policia" src="./img/familiares.svg" alt="logo_policia">
+      <h3>Familiares Asignados</h3>
+      <p>Contacta directamente con las autoridades especializadas en delitos informáticos
+        <br>
+        <img class="imagen-peque" src="./img/flecha_derecha.svg" alt="">
+      </p>
+    </button>
+  </div>
+
+<div id="ventanaEmergente" class="ventana">
+  <div class="contenido-ventana">
+    <span class="cerrar" onclick="cerrarVentana()">&times;</span>
+    <h2>Contacta con la Policía Cibernética</h2>
+    <p>Para realizar reportes y solicitar apoyo, comunícate al:</p>
+    <p><strong>55 5242 5100 ext. 5086</strong></p>
+    <p>O escríbenos al correo electrónico:</p>
+    <p><strong>policia.cibernetica@ssc.cdmx.gob.mx</strong></p>
+    
+    <p>En caso de requerir pláticas informativas de prevención, comunícate al:</p>
+    <p><strong>55 5242 5100 ext. 5666</strong></p>
+    <p>O escríbenos al correo electrónico:</p>
+    <p><strong>prevencion.cibernetica@ssc.cdmx.gob.mx</strong></p>
+    
+    <p>Contáctanos en la cuenta de Twitter:</p>
+    <p><strong>@UCS_GCDMX</strong></p>
+  </div>
+</div>
+
+<div id="ventanaEmergente_tres" class="ventana">
+  <div class="contenido-ventana">
+    <h2>Familiares Asignados</h2>
+    <p>Contactos de confianza:</p>
+
+    <div class="contacto-familiar-box">
+      <div class="contacto-familiar">
+        <span class="nombre-familiar"><strong>Alicia:</strong> Hija</span>
+        <button class="boton-familiar-dos" onclick="llamarFamiliar()">
+          <img class="telefono-peque-fam" src="./img/telefono.svg" alt="Teléfono">
+        </button>
+      </div>
+    </div>
+
+    <div class="contacto-familiar-box">
+      <div class="contacto-familiar">
+        <span class="nombre-familiar"><strong>Carlos:</strong> Hijo</span>
+        <button class="boton-familiar-dos" onclick="llamarFamiliar()">
+          <img class="telefono-peque-fam" src="./img/telefono.svg" alt="Teléfono">
+        </button>
+      </div>
+    </div>
+
+    <button class="cerrar" onclick="cerrarVentana_tres()">Cerrar</button>
+  </div>
 </div>
 
 
 
 
-
+</div>
 
 
     <script src="chatgpt.js"></script>
-    <script src="scriptprueba.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
