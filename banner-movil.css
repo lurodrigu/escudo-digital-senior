@@ -5,7 +5,7 @@
     top: auto;              /* Anula el valor top original */
     left: 0;                /* Alineado al borde izquierdo */
     width: 100vw;           /* Ocupa todo el ancho de la pantalla */
-    height: auto;           /* Altura automática según contenido */
+    height: 80px;           /* Altura automática según contenido */
     padding: 10px;          /* Relleno interno */
     background-color: #f8f9fa;
     border-top: 2px solid #ccc;
@@ -20,8 +20,8 @@
   }
 
   .banner-img {
-    width: 80px;             /* Ajusta el tamaño de las imágenes */
-    height: auto;
+    width: 200px;             /* Ajusta el tamaño de las imágenes */
+    height: max-content;
     margin-bottom: 0;        /* Elimina espacio inferior en horizontal */
     border-radius: 5px;
   }
